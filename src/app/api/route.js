@@ -10,6 +10,7 @@ export async function POST(request) {
     const query = req.QUERY;
     console.log(query);
 
+    // const res = "this is dumm y on ly for testing";
     async function main() {
       const completion = await openai.chat.completions.create({
         messages: [{ role: "system", content: query }],
@@ -17,7 +18,7 @@ export async function POST(request) {
       });
       const res = completion.choices[0].message.content;
       console.log(res);
-      return NextResponse.json({ RESULT: res });
+    return NextResponse.json({ RESULT: res });
     }
 
     // Await main() to ensure it completes before returning the response
