@@ -38,7 +38,7 @@ export default function Home() {
   }
   return (
     <main>
-      <div>{loading ? "Loading..." : ResultLLM()}</div>
+      <div>{loading ? "Loading..." : output}</div>
       <form onSubmit={HandleSubmit}>
         <label>
           Enter your name:
