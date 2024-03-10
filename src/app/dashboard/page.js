@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 
-export default function Home() {
+export default function DashBoard() {
   const [query, setQuery] = useState("");
   const [output, setOutput] = useState("it's null right now");
   const [loading, setLoading] = useState(false);
@@ -70,7 +70,7 @@ export default function Home() {
 
   return (
     <main>
-      <div classNa me={`mb-[10vw]`}>
+      <div className={`mb-[10vw]`}>
         {loading ? <p>Loading...</p> : ""}
 
         {/* Display chat messages */}
