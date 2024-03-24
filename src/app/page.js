@@ -22,6 +22,7 @@ export default function Home() {
         message: newQuery,
       },
     ]);
+``
 
     // Clear the input field
     setQuery("");
@@ -70,7 +71,7 @@ export default function Home() {
 
   return (
     <main>
-      <div classNa me={`mb-[10vw]`}>
+      <div className={`mb-[10vw]`}>
         {loading ? <p>Loading...</p> : ""}
 
         {/* Display chat messages */}
